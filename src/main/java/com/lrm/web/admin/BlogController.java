@@ -22,7 +22,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpSession;
 
 /**
- * Created by limi on 2017/10/15.
+ * Created by lizhonghua on 2020/12/13.
  */
 @Controller
 @RequestMapping("/admin")

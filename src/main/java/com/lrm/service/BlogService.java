@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by limi on 2017/10/20.
+ * Created by lizhonghua on 2020/12/13.
  */
 public interface BlogService {
 
