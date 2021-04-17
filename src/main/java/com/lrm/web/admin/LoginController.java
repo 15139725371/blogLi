@@ -33,13 +33,24 @@ public class LoginController {
     @PostMapping("/login")
     public String login(@RequestParam String username,
                         @RequestParam String password,
+                        @RequestParam String fruit,
                         HttpSession session,
                         RedirectAttributes attributes) {
         User user = userService.checkUser(username, password);
         if (user != null) {
             user.setPassword(null);
             session.setAttribute("user",user);
-            return "admin/index";
+            //判断用户类型
+            if(user.getType()==0 && "0".equals(fruit)){
+                return "super_admin/index";
+            }else{
+                if(!user.getUsername().equals("admin") && "1".equals(fruit)){
+                    return "admin/index";
+                }
+                attributes.addFlashAttribute("message", "用户名和密码错误或者重新选择新的用户类型");
+                return "redirect:/admin";
+            }
+
         } else {
             attributes.addFlashAttribute("message", "用户名和密码错误");
             return "redirect:/admin";

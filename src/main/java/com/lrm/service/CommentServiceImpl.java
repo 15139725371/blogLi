@@ -28,6 +28,11 @@ public class CommentServiceImpl implements CommentService {
         return eachComment(comments);
     }
 
+    @Override
+    public List<Comment> findAllComment() {
+        return commentRepository.findAll();
+    }
+
     @Transactional
     @Override
     public Comment saveComment(Comment comment) {
@@ -39,6 +44,18 @@ public class CommentServiceImpl implements CommentService {
         }
         comment.setCreateTime(new Date());
         return commentRepository.save(comment);
+    }
+
+    @Override
+    public Comment findOndCommentById(long commentId) {
+
+        return commentRepository.findOne(commentId);
+        //return commentRepository.findOndCommentById(commentId);
+    }
+
+    @Override
+    public void delOneComent(long commentId) {
+        commentRepository.delete(commentId);
     }
 
 

@@ -35,7 +35,31 @@
                  <input type="password" name="password" placeholder="密码">
                </div>
              </div>
-             <button class="ui fluid large teal submit button">登   录</button>
+
+             <div class="field">
+               <div class="field">
+                 <div class="field">
+                   <div class="ui radio checkbox">
+                     <input type="radio" name="fruit" checked="checked" value="1">
+                     <label>用户</label>
+                   </div>
+                   <div class="ui radio checkbox">
+                     <input type="radio" name="fruit" value="0">
+                     <label>管理员</label>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+             <div class="ui left icon input">
+               <button class="ui fluid large teal submit button">登   录</button>
+<!--               <a href="#" th:href="@{/types/-1}" class="ui fluid large teal submit button" th:classappend="${n==2} ? 'active'">注   册</a>-->
+             </div>
+
+<!--             <div class="ui left icon input">-->
+<!--               <a href="#" th:href="@{/types/-1}" class="submit button" th:classappend="${n==2} ? 'active'">管理员登录</a>-->
+<!--             </div>-->
+
            </div>
 
            <div class="ui error mini message"></div>
@@ -68,6 +92,13 @@
         rules: [{
           type : 'empty',
           prompt: '请输入密码'
+        }]
+      },
+      password : {
+        identifier: 'fruit',
+        rules: [{
+          type : 'empty',
+          prompt: '请选择用户类型'
         }]
       }
     }

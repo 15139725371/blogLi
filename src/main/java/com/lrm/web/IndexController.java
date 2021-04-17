@@ -1,11 +1,13 @@
 package com.lrm.web;
 
 import com.lrm.NotFoundException;
+import com.lrm.po.Blog;
 import com.lrm.service.BlogService;
 import com.lrm.service.TagService;
 import com.lrm.service.TypeService;
 import com.lrm.vo.BlogQuery;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -15,6 +17,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.servlet.http.HttpSession;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import static java.util.Comparator.comparing;
 
 /**
  * Created by lizhonghua on 2020/12/13.
@@ -38,8 +47,10 @@ public class IndexController {
         model.addAttribute("types", typeService.listTypeTop(6));
         model.addAttribute("tags", tagService.listTagTop(10));
         model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(8));
+
         return "index";
     }
+
 
 
     @PostMapping("/search")
@@ -51,8 +62,9 @@ public class IndexController {
     }
 
     @GetMapping("/blog/{id}")
-    public String blog(@PathVariable Long id,Model model) {
+    public String blog(@PathVariable Long id,Model model,HttpSession session) {
         model.addAttribute("blog", blogService.getAndConvert(id));
+        session.setAttribute("blogIdId",id);
         return "blog";
     }
 

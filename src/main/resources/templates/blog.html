@@ -443,11 +443,11 @@ h5,h6{font-size:1em;}
             <div class="ui orange basic label">
               <div class="ui images" style="font-size: inherit !important;">
                 <div class="image">
-                  <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded bordered image" style="width: 120px">
+                  <img src="../static/images/zhifubao.png" th:src="@{/images/zhifubao.png}" alt="" class="ui rounded bordered image" style="width: 120px">
                   <div>支付宝</div>
                 </div>
                 <div class="image">
-                  <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded bordered image" style="width: 120px">
+                  <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded bordered image" style="width: 120px">
                   <div>微信</div>
                 </div>
               </div>
@@ -461,9 +461,9 @@ h5,h6{font-size:1em;}
         <div class="ui middle aligned grid">
           <div class="eleven wide column">
             <ui class="list">
-              <li>作者：<span th:text="${blog.user.nickname}">李仁密</span><a href="#" th:href="@{/about}" target="_blank">（联系作者）</a></li>
-              <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2017-10-02 09:08</span></li>
-              <li>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
+              <li>作者：<span th:text="${blog.user.nickname}">李中华</span><a href="#" th:href="@{/about}" target="_blank">（联系作者）</a></li>
+              <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2021-04-02 09:08</span></li>
+              <li>版权声明：自由转载-非商用-非衍生-保持署名-泰山码</li>
               <li>公众号转载：请在文末添加作者公众号二维码</li>
             </ui>
           </div>
@@ -477,7 +477,7 @@ h5,h6{font-size:1em;}
         <div id="comment-container"  class="ui teal segment">
           <div th:fragment="commentList">
             <div class="ui threaded comments" style="max-width: 100%;">
-              <h3 class="ui dividing header">评论</h3>
+              <h3 class="ui dividing header">评论</h3><span th:text="${session.noDel}" style="color: red"></span>
               <div class="comment" th:each="comment : ${comments}">
                 <a class="avatar">
                   <img src="https://unsplash.it/100/100?image=1005" th:src="@{${comment.avatar}}">
@@ -495,6 +495,11 @@ h5,h6{font-size:1em;}
                   </div>
                   <div class="actions">
                     <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${comment.id},data-commentnickname=${comment.nickname}" onclick="reply(this)">回复</a>
+<!--                    <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${comment.id}" onclick="deleteOne(this)">删除</a>-->
+                    <span th:if="${session.user}!=null">
+                      <a class="reply" data-commentid="1" href="#" data-commentnickname="Matt" th:attr="data-commentid=${comment.id}"th:href="@{/comments/deleteComment(commentId=${comment.id},blogId=${session.blogIdId})}">删除 </a>
+                      <input type="hidden" name="blogId" th:value="${session.blogIdId}">
+                    </span>
                   </div>
                 </div>
                 <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
@@ -516,6 +521,9 @@ h5,h6{font-size:1em;}
                       </div>
                       <div class="actions">
                         <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${reply.id},data-commentnickname=${reply.nickname}" onclick="reply(this)">回复</a>
+                        <span th:if="${session.user}!=null">
+                          <a class="reply" data-commentid="1" href="#" data-commentnickname="Matt" th:attr="data-commentid=${reply.id}"th:href="@{/comments/deleteComment(commentId=${reply.id},blogId=${session.blogIdId})}">删除 </a>
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -611,7 +619,7 @@ h5,h6{font-size:1em;}
 
   <div id="toolbar" class="m-padded m-fixed m-right-bottom" style="display: none">
     <div class="ui vertical icon buttons ">
-      <button type="button" class="ui toc teal button" >目录</button>
+<!--      <button type="button" class="ui toc teal button" >目录</button>-->
       <a href="#comment-container" class="ui teal button" >留言</a>
       <button class="ui wechat icon button"><i class="weixin icon"></i></button>
       <div id="toTop-button" class="ui icon button" ><i class="chevron up icon"></i></div>
@@ -664,7 +672,7 @@ h5,h6{font-size:1em;}
         </div>
       </div>
       <div class="ui inverted section divider"></div>
-      <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2016 - 2017 Lirenmi Designed by Lirenmi</p>
+      <p class="m-text-thin m-text-spaced m-opacity-tiny">Hello 2021 Lizhonghua</p>
     </div>
 
   </footer>
@@ -713,7 +721,8 @@ h5,h6{font-size:1em;}
       position: 'left center'
     });
 
-    var serurl = /*[[#{blog.serurl}]]*/"127.0.0.1:8080";
+    // var serurl = /*[[#{blog.serurl}]]*/"127.0.0.1:8080";
+    var serurl = /*[[#{blog.serurl}]]*/"192.168.31.68:8080";
     var url = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
     var qrcode = new QRCode("qrcode", {
       text: serurl+url,
@@ -813,6 +822,19 @@ h5,h6{font-size:1em;}
       $("[name='content']").attr("placeholder", "@"+commentNickname).focus();
       $("[name='parentComment.id']").val(commentId);
       $(window).scrollTo($('#comment-form'),500);
+    }
+
+    //删除
+    function deleteOne(obj) {
+      var commentId = $(obj).data('commentid');
+      console.log("commentId=",commentId);
+      $("").load(/*[[@{/comments/deleteComments}]]*/"",{
+        "parentComment.id" : $("[name='parentComment.id']").val()
+      },function (responseTxt, statusTxt, xhr) {
+        console.log("lizhonghau ")
+//        $(window).scrollTo($('#comment-container'),500);
+//        clearContent();
+      });
     }
 
     
