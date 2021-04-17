@@ -2,57 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="邮箱和qq修改">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_houbb_heaven_0_1_68.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_houbb_opencc4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_houbb_sensitive_word_0_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrm/dao/AdminsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrm/minganzifu/SensitiveWordInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrm/minganzifu/SensitivewordFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrm/service/AdminsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrm/service/AdminsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrm/web/admin/AdminsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/wechat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/zhifubao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/super_admin/_fragments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/super_admin/admins-input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/super_admin/admins.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/super_admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2021-01-25.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/dao/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/dao/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/service/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/web/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/web/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/web/admin/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/web/admin/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/web/admin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/web/admin/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/wechat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/wechat.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/tags-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tags-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/types.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/lrm/dao/AdminsRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/lrm/minganzifu/SensitiveWordInit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/lrm/minganzifu/SensitivewordFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/lrm/service/AdminsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/lrm/service/AdminsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/lrm/web/admin/AdminsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/wechat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/zhifubao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/super_admin/_fragments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/super_admin/admins-input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/super_admin/admins.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/super_admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lrm/dao/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lrm/dao/CommentRepository.class" afterDir="false" />
@@ -394,34 +355,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lrm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lrm" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lrm" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lrm" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -847,7 +780,7 @@
       <workItem from="1618539570538" duration="16000" />
       <workItem from="1618564291324" duration="3175000" />
       <workItem from="1618624576323" duration="6247000" />
-      <workItem from="1618649094328" duration="10104000" />
+      <workItem from="1618649094328" duration="10876000" />
     </task>
     <task id="LOCAL-00001" summary="博客首次提交">
       <created>1612335988086</created>
@@ -870,7 +803,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612410453225</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="博客首次提交">
+      <created>1618667187529</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618667187529</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -906,7 +846,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="359840000" />
+    <option name="totallyTimeSpent" value="360612000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -927,7 +867,7 @@
       <window_info id="Favorites" order="4" sideWeight="0.5013193" side_tool="true" weight="0.22312045" />
       <window_info id="Web" order="5" sideWeight="0.5013193" side_tool="true" weight="0.22312045" />
       <window_info id="Nl-Palette" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49868074" visible="true" weight="0.2419571" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49868074" visible="true" weight="0.2419571" />
       <window_info id="Structure" order="8" weight="0.2497979" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.5070922" />
       <window_info anchor="bottom" id="Messages" order="1" weight="0.3286119" />
@@ -937,7 +877,7 @@
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5004042" side_tool="true" weight="0.45567375" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.4995958" visible="true" weight="0.15580736" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.4995958" visible="true" weight="0.2733711" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.388102" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -1044,10 +984,10 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="博客首次提交" />
     <MESSAGE value="博客注释时间" />
     <MESSAGE value="邮箱和qq修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="邮箱和qq修改" />
+    <MESSAGE value="博客首次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="博客首次提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
