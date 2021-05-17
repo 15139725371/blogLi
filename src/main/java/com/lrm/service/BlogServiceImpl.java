@@ -2,7 +2,9 @@ package com.lrm.service;
 
 import com.lrm.NotFoundException;
 import com.lrm.dao.BlogRepository;
+import com.lrm.dao.CommentRepository;
 import com.lrm.po.Blog;
+import com.lrm.po.Comment;
 import com.lrm.po.Type;
 import com.lrm.util.MarkdownUtils;
 import com.lrm.util.MyBeanUtils;
@@ -29,6 +31,9 @@ public class BlogServiceImpl implements BlogService {
 
     @Autowired
     private BlogRepository blogRepository;
+
+    @Autowired
+    private CommentRepository commentRepository;
 
     @Override
     public Blog getBlog(Long id) {
@@ -145,6 +150,12 @@ public class BlogServiceImpl implements BlogService {
     @Transactional
     @Override
     public void deleteBlog(Long id) {
+        //        Comment comment=new Comment();
+//        Blog blog=new Blog();
+//        blog.setId(id);
+//        comment.setBlog(blog);
+//        System.out.println(comment.toString());
+//        commentRepository.delete(comment);
         blogRepository.delete(id);
     }
 }
